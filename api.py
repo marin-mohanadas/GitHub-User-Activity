@@ -16,7 +16,6 @@ def get_user_activity(username: str):
         print(f"Recent activity for {username}:\nOutput:")
 
         for item in data:
-            # formatter = Events(item.get("type"))
             message = Events(item).format_event()
             print("-", message)
 
